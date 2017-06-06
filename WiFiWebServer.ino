@@ -129,55 +129,6 @@ void setup() {
   //LED off when config is ok
   digitalWrite(BUILTIN_LED, HIGH);
 }
-//void setup() {
-//  Serial.begin(115200);
-//  delay(10);
-//  //prep dht
-//  dht.begin();
-//
-//  // prepare GPIO2
-//  pinMode(LED_BUILTIN, OUTPUT);
-//  digitalWrite(LED_BUILTIN, LOW);
-//  
-//  // Connect to WiFi network
-//  Serial.println();
-//  Serial.println();
-//  Serial.print("Connecting to ");
-//  Serial.println(ssid);
-//  
-//  WiFi.begin(ssid, password);
-//  
-//  while (WiFi.status() != WL_CONNECTED) {
-//    delay(500);
-//    Serial.print(".");
-//  }
-//  Serial.println("");
-//  Serial.println("WiFi connected");
-//
-//  // Print the IP address
-//  Serial.println(WiFi.localIP());
-//
-//  char deviceName[20];
-//  sprintf(deviceName,"sensor-%x",ESP.getChipId());
-//  Serial.print("MDNS Name: ");
-//  Serial.println(deviceName);
-//  
-//  if ( MDNS.begin ( deviceName ) ) {
-//    Serial.println ( "MDNS responder started" );
-//  }
-//
-//  //start http server
-//  server.on ( "/dht", handleDHT );
-//  server.onNotFound ( handleNotFound );
-//  server.begin();
-//  Serial.println ( "HTTP server started" );
-//
-//  // Add service to MDNS-SD
-//  MDNS.addService("sensor", "tcp", 80);
-//
-//  //indicate that startup ended
-//  digitalWrite(LED_BUILTIN, HIGH);
-//}
 
 void loop ( void ) {
   server.handleClient();
