@@ -28,3 +28,7 @@ Timestamp     A/R    Flags  if Domain               Service Type         Instanc
 ```
 
 Error is set to `true` when there is a problem communicating with the DHT module
+
+## Data collection
+
+Companion program https://github.com/gotbadger/mdns_data_logger can be used to store data in InfluxDB allowing easy graphing in https://grafana.com/
