@@ -1,3 +1,7 @@
+# Archived
+Im not using a diffrent approach:
+https://github.com/gotbadger/HomeIoT
+
 # iot-sensor
 IoT Sensor for ESP8266 with DHT22 sensor
 
